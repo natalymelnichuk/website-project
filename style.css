@@ -78,3 +78,57 @@ nav ul li a:hover {
 .hero-img img {
     height: 100%;
 }
+
+.contact-section {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    background: url(./assets/contact-background.jpeg) center/cover;
+    filter: blur(5px);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+label {
+    padding: 1em 2em;
+}
+
+input, textarea {
+    margin-left: 2em;
+    width: 50%;
+    height: 2em;
+    border-radius: 2em;
+    padding-left: 1em;
+}
+
+textarea {
+    height: 3em;
+}
+
+.contact-section button {
+    font-size: 1em;
+    height: 2.5em;
+    width: 10em;
+    padding: 0.5em;
+    background-color: #9CBD9A;
+    border: 1px solid #222222;
+    border-radius: 1.2em;
+}
+
